@@ -22,30 +22,7 @@ This project involves the deployment of a static educational website using an Ap
 - **HTML5/CSS3**: Core technologies used to structure and style the web pages.
 - **JavaScript**: Used for interactive elements like carousels and accordions.
 - **Bootstrap**: A front-end framework for building responsive websites.
-
-## Project Structure
-```
-├── index.html           # Main HTML file for the website
-├── assets/              # Directory containing images, CSS, and JavaScript files
-│   ├── css/
-│   │   ├── fontawesome.css
-│   │   ├── templatemo-scholar.css
-│   │   ├── owl.css
-│   │   └── animate.css
-│   ├── images/          # Images used in the website
-│   ├── js/
-│   │   ├── isotope.min.js
-│   │   ├── owl-carousel.js
-│   │   ├── counter.js
-│   │   └── custom.js
-├── vendor/
-│   ├── bootstrap/
-│   │   ├── css/
-│   │   └── js/
-│   └── jquery/
-│       └── jquery.min.js
-└── README.md            # Project documentation
-```
+  
 
 ## Setup Instructions
 
