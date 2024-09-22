@@ -1,8 +1,3 @@
-# scholar-online-school-website
-
-Here's a `README.md` file based on the provided `index.html` file.
-
----
 
 # Scholar - Online School Website
 
@@ -39,11 +34,8 @@ This project involves the deployment of a static educational website using an Ap
 
 ### 2. Connect to the EC2 Instance
 1. Open a terminal or command prompt on your local machine.
-2. Use SSH to connect to the EC2 instance:
-   ```
-   ssh -i /path/to/your-key.pem ec2-user@your-ec2-public-ip
-   ```
-3. Replace `/path/to/your-key.pem` with the path to your key file, and `your-ec2-public-ip` with the public IP of your EC2 instance.
+2. Use SSH to connect to the EC2 instance
+3. Make sure git is installed on the ec2 instance.
 
 ### 3. Install Apache HTTP Server
 1. Update the instance’s package manager:
@@ -64,13 +56,20 @@ This project involves the deployment of a static educational website using an Ap
    ```
 
 ### 4. Deploy the Website
-1. Transfer the website files (including `index.html`, CSS, JS, and image assets) to the EC2 instance using SCP or directly editing on the instance.
-2. Move the website files to the Apache server's root directory:
+1. clone the repository consisting of website files (including `index.html`, CSS, JS, and image assets) to the EC2 instance using git:
+   ```
+   git clone <remote_reository_url>
+   ```
+3. Move the website files to the Apache server's root directory:
    ```
    sudo mv index.html /var/www/html/
    sudo mv -r assets /var/www/html/
    ```
-3. Verify the deployment by visiting the public IP of your EC2 instance in a web browser:
+4. Restart the apache service:
+   ```
+   sudo systemctl restart httpd
+   ``` 
+5. Verify the deployment by visiting the public IP of your EC2 instance in a web browser:
    ```
    http://your-ec2-public-ip
    ```
