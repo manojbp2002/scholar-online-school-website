@@ -62,8 +62,8 @@ This project involves the deployment of a static educational website using an Ap
    ```
 3. Move the website files to the Apache server's root directory:
    ```
-   sudo mv index.html /var/www/html/
-   sudo mv -r assets /var/www/html/
+   sudo cp index.html /var/www/html/
+   sudo cp  assets /var/www/html/
    ```
 4. Restart the apache service:
    ```
